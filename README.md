@@ -37,27 +37,29 @@ pip install pandas scikit-learn nltk
 
 ## Usage
 1. Clone the repository:
-   bash
+   ```bash
    git clone https://github.com/your-username/wine-variety-predictor.git
-cd wine-variety-predictor
-3. Run the script:
-bash
-python wine_variety_predictor.py
-4. Input Data: The script requires a CSV file with columns for wine descriptions and their corresponding varieties for training the model. The file should be structured as follows:
+   cd wine-variety-predictor
+2. Run the script:
+   ```bash
+   python wine_variety_predictor.py
+3. Input Data: The script requires a CSV file with columns for wine descriptions and their corresponding varieties for training the model.
+    The file should be structured as follows:
    Description	             Variety
 "A rich, bold red wine"	     Merlot
 "A crisp, refreshing white"	 Chardonnay
 4.Prediction: Once the model is trained, it can predict the variety of wine for a given description by using the predict() function.
 
 ### Project Structure
-bash
-wine-variety-predictor/
-│
-├── wine_variety_predictor.py  # Main Python script for prediction
-├── data/
-│   └── wine_data.csv         # Dataset containing wine descriptions and varieties
-├── README.md                # Project documentation
-└── requirements.txt         # List of dependencies
+    ```bash
+    wine-variety-predictor/
+    │
+    ├── wine_variety_predictor.py  # Main Python script for prediction
+    ├── data/
+    │   └── wine_data.csv         # Dataset containing wine descriptions and varieties
+    ├── README.md                # Project documentation
+    └── requirements.txt         # List of dependencies
+
 
 ## Model Performance
 1. The model achieves an accuracy of 50% based on initial tests.
